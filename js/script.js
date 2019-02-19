@@ -24,3 +24,12 @@ $(".menu").on("click", "a", function (event) {
         scrollTop: top
     }, 1500);
 });
+$(".footer-menu").on("click", "a", function (event) {
+    event.preventDefault();
+    var id = $(this).attr('href');
+    var top = $(id).offset().top;
+
+    $('body,html').animate({
+        scrollTop: top
+    }, 1500);
+});
