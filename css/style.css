@@ -126,7 +126,21 @@ button {
 }
 
 .btn-dark:hover {
-    background:  #161618;
+    background: #161618;
+}
+
+.btn-white {
+    background: #fff;
+    color: #000 !important;
+    font-weight: 800;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    transition: 0.2s;
+}
+
+.btn-white:hover {
+    background: #ececec;
+
 }
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * HEADER * * * * * * * * * * * * * * * * * * * * * * * * * */
@@ -403,7 +417,7 @@ button {
     align-items: center;
     justify-content: center;
     text-align: center;
-  
+
 }
 
 .hero-teacher-name {
@@ -489,6 +503,7 @@ button {
 .course-get ul {
     margin-top: 50px;
 }
+
 .course-get li img {
     /* width: 15px; */
     margin-right: 15px;
@@ -502,9 +517,67 @@ button {
     margin-bottom: 15px;
 }
 
-.course-get-photo img{
+.course-get-photo img {
     object-fit: contain;
     width: 100%;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * FOOTER * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+.footer {
+    background: url('../images/header-bg.jpg') no-repeat;
+    background-size: cover;
+    padding: 50px 0;
+}
+
+.footer * {
+    color: #fff;
+}
+
+.footer h2 {
+    font-size: 40px;
+    margin-bottom: 300px;
+}
+
+.footer-white-line {
+    width: 100%;
+    height: 3px;
+    background: #fff;
+}
+
+.footer-footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0;
+}
+
+.footer .btn-white {
+    display: block;
+    width: 280px;
+    text-align: center;
+}
+
+.footer-menu ul {
+    text-align: right;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.footer-column:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer-socials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.footer-socials a {
+    margin: 0 5px;
 }
 
 
@@ -565,6 +638,7 @@ button {
         font-size: 28px;
         line-height: 40px;
     }
+
     .experience-hero {
         padding: 50px 15px;
     }
@@ -657,6 +731,7 @@ button {
         align-items: center;
         text-align: center;
     }
+
     .experience-hero h2 {
         padding-right: 0;
         font-size: 30px;
@@ -666,6 +741,22 @@ button {
     .course-get-text {
         flex-direction: column;
         align-items: center;
+    }
+    .footer-footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-column {
+        margin-bottom: 50px;
+    }
+    .footer-socials {
+        margin-top: 50px;
+    }
+
+    .footer-menu ul {
+        align-items: center;
+        text-align: center;
     }
 }
 
@@ -689,6 +780,7 @@ button {
     .hero-video iframe {
         height: unset;
     }
+
     .experience {
         padding: 15px;
     }
@@ -696,19 +788,24 @@ button {
     .statistics h2 {
         font-size: 24px;
     }
+
     .statistics-bottom h2 {
         padding-left: 20px;
     }
+
     .tariffs h2 {
         text-align: center;
         padding-left: 0;
     }
+
     .course-get h2 {
         font-size: 28px;
     }
+
     .course-get ul img {
         width: 20px;
     }
+
     .course-get ul li {
         font-size: 16px;
     }
