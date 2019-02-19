@@ -267,6 +267,157 @@ button {
     color: #fff;
 }
 
+/* * * * * * * * * * * * * * * * * * * * * * * * * * STATISTICS * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+.statistics {
+    padding: 30px 0;
+}
+
+.statistics h2 {
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.about-numbers {
+    display: flex;
+    margin-top: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.about-number {
+    width: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.about-number-line {
+    display: block;
+    width: 80%;
+    height: 2px;
+    background: #f8c708;
+}
+
+.about-number span:first-child {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.about-number span:nth-child(2) {
+    height: 50px;
+}
+
+.about-number-photo {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    text-align: center;
+    height: 100px;
+    margin-top: 20px;
+}
+
+.statistics-bottom h2 {
+    font-size: 30px;
+    text-align: left;
+    padding-left: 100px;
+}
+
+.statistics-bottom-cards {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+
+.statistics-bottom-card {
+    display: flex;
+    width: 250px;
+    padding: 10px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.statistics-bottom-card h3 {
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * EXPERIENCE * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+.experience {
+    background: url('../images/header-bg.jpg') no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 50px;
+}
+
+.experience * {
+    color: #fff;
+}
+
+.experience .wrapper {
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.experience-hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 80px;
+}
+
+.hero-teacher-photo img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.experience-hero h2 {
+    font-size: 40px;
+    padding-right: 20px;
+}
+
+.hero-teacher {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  
+}
+
+.hero-teacher-name {
+    margin-top: 20px;
+}
+
+.experience-teachers {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.experience-teacher {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0 10px;
+    margin-bottom: 20px;
+}
+
+.experience-teacher h4 {
+    margin-top: 10px;
+}
+
+
+
+
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * MEDIA MAX 1366 * * * * * * * * * * * * * * * * * * * * * * * * * */
 
@@ -324,6 +475,9 @@ button {
     .hero-titles h1 {
         font-size: 28px;
         line-height: 40px;
+    }
+    .experience-hero {
+        padding: 50px 15px;
     }
 }
 
@@ -403,8 +557,21 @@ button {
     .hero-tabs h2 {
         font-size: 24px;
     }
+
     .hero-tabs p {
         font-size: 14px;
+    }
+
+    .experience-hero {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .experience-hero h2 {
+        padding-right: 0;
+        font-size: 30px;
+        margin-top: 10px;
     }
 }
 
@@ -428,11 +595,25 @@ button {
     .hero-video iframe {
         height: unset;
     }
+    .experience {
+        padding: 15px;
+    }
+
+    .statistics h2 {
+        font-size: 24px;
+    }
+    .statistics-bottom h2 {
+        padding-left: 20px;
+    }
 }
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * MEDIA MAX 1366 * * * * * * * * * * * * * * * * * * * * * * * * * */
 
-@media screen and (max-width:) {}
+@media screen and (max-width: 375px) {
+    .hero-tabs h2 {
+        font-size: 22px;
+    }
+}
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * MEDIA MAX 1366 * * * * * * * * * * * * * * * * * * * * * * * * * */
 
