@@ -140,7 +140,6 @@ button {
 
 .btn-white:hover {
     background: #ececec;
-
 }
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * HEADER * * * * * * * * * * * * * * * * * * * * * * * * * */
@@ -205,12 +204,39 @@ button {
 .hero-text {
     padding: 15px;
     padding-left: 0;
+    width: 50%;
 }
 
 .hero-text p {
     color: #fff;
     font-size: 18px;
     line-height: 30px;
+}
+
+
+.hero-video {
+    width: 50%;
+}
+
+.hero-video h3 {
+    color: #fff;
+}
+
+.hero-video form {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-video form input {
+    background: rgba(0, 0, 0, 0.4);
+    border: none;
+    outline: none;
+}
+
+.hero-video form input::placeholder {
+    background: rgba(0, 0, 0, 0.4);
+    border: none;
+    outline: none;
 }
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * HERO * * * * * * * * * * * * * * * * * * * * * * * * * */
@@ -284,7 +310,8 @@ button {
     padding-top: 10px;
 }
 
-.hero-tabs.bg-black-photo h2 {
+.hero-tabs.bg-black-photo h2,
+.hero-tabs.bg-black-photo h3 {
     color: #fff;
 }
 
@@ -293,6 +320,10 @@ button {
 }
 
 .hero-tabs.bg-black-photo p {
+    color: #fff;
+}
+
+.hero-tabs.bg-black-photo ul li {
     color: #fff;
 }
 
@@ -307,6 +338,11 @@ button {
     text-align: center;
     text-transform: uppercase;
     font-weight: 800;
+}
+
+.statistics p {
+    text-align: center;
+    margin-top: 30px;
 }
 
 .about-numbers {
@@ -353,7 +389,8 @@ button {
 .statistics-bottom h2 {
     font-size: 30px;
     text-align: left;
-    padding-left: 100px;
+    margin-top: 80px;
+    margin-bottom: 30px;
 }
 
 .statistics-bottom-cards {
@@ -429,6 +466,8 @@ button {
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
+    padding: 15px;
+    padding-bottom: 30px;
 }
 
 .experience-teacher {
@@ -452,7 +491,7 @@ button {
 
 .tariffs h2 {
     font-size: 40px;
-    padding-left: 50px;
+    margin-bottom: 50px;
 }
 
 .tariffs-cards {
@@ -742,6 +781,7 @@ button {
         flex-direction: column;
         align-items: center;
     }
+
     .footer-footer {
         flex-direction: column;
         align-items: center;
@@ -750,6 +790,7 @@ button {
     .footer-column {
         margin-bottom: 50px;
     }
+
     .footer-socials {
         margin-top: 50px;
     }
