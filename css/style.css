@@ -213,13 +213,17 @@ button {
     line-height: 30px;
 }
 
-
 .hero-video {
     width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .hero-video h3 {
     color: #fff;
+    font-size: 40px;
 }
 
 .hero-video form {
@@ -231,12 +235,37 @@ button {
     background: rgba(0, 0, 0, 0.4);
     border: none;
     outline: none;
+    padding: 15px;
+    margin: 10px 0;
+    width: 300px;
+    display: flex;
+    border-radius: 50px;
+}
+
+.hero-video form input:focus {
+    background: #fff;
+    transition: 0.2s;
 }
 
 .hero-video form input::placeholder {
-    background: rgba(0, 0, 0, 0.4);
     border: none;
     outline: none;
+}
+
+.hero-video form button {
+    background: #fff;
+    padding: 15px 30px;
+    margin: 10px auto;
+    width: 145px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.2s;
+    text-transform: uppercase;
+    font-family: inherit;
+}
+
+.hero-video form button:hover {
+    background: #f7ef07;
 }
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * HERO * * * * * * * * * * * * * * * * * * * * * * * * * */
@@ -245,7 +274,6 @@ button {
     background: url('../images/dots-bg.jpg');
     padding: 100px 0;
 }
-
 
 .hero-tabs {
     padding: 30px 80px;
@@ -667,6 +695,8 @@ button {
 
     .hero-text {
         padding-top: 0;
+        width: 100%;
+        margin-bottom: 50px;
     }
 }
 
